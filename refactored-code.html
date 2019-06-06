@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-EN" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Refactored code</title>
+    <style>
+      body{
+        font-size: 16px;
+        margin: 0;
+      }
+      h1{
+        margin: 0 0 0.5em 0;
+        font-size: 2em;
+        font-weight: 700;
+      }
+      p, ol, a{
+        margin: 0 0 1em 0;
+      }
+      p, ol li{
+        font-style: italic;
+      }
+      p.note{
+        font-style: normal;
+        background-color: blue;
+        color: aqua;
+        padding: 0.625em;
+      }
+      a{
+        display: inline-block;
+        color: blue;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .list{
+        display: none;
+      }
+      .list li{
+        font-style: normal;
+      }
+      .list li span{
+        font-weight: 700;
+        color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section>
+
+        <h1>Fix this ugly code!</h1>
+
+        <p>This page is full of lots of violations of the DRY principle (Don't Repeat Yourself) along with a number of other violations of HTML markup best practices.</p>
+        <p>Your goal is to refactor the HTML, CSS and JavaScript on this page so that you have:</p>
+        <ol>
+          <li>a clear separation of concerns between HTML, CSS and JavaScript.</li>
+        </ol>
+
+        <a>Click Here to See Suggested Refactoring Path!</a>
+
+        <ol class="list">
+          <li>Refactor <span>inline styles</span> (into the head tag or an external stylesheet).</li>
+          <li>Refactor <span>duplication</span> that exists in the inline style tags.</li>
+          <li>Refactor <span>markup</span> to use appropriate html elements.</li>
+          <li>Refactor <span>styles</span> to eliminate the property duplication.</li>
+          <li>Refactor <span>javascript</span> to eliminate inline click handler.</li>
+        </ol>
+
+        <p class="note">While there are numbers of tools available that can assist in making this refactoring easier, I want to challenge you to do this refactor with nothing but your brain and a text editor.</p>
+
+      </section>
+    </main>
+
+    <script>
+
+      document.querySelector("a").addEventListener("click", showList);
+
+      function showList(){
+        var list = document.querySelector('.list');
+
+        if(list.style.display == 'none' || list.style.display == '') {
+            list.style.display = 'block';
+        } else {
+            list.style.display = 'none';
+        }
+      }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+@media only screen and (max-width: 1366px){
+  body{
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  header{
+    .header{
+      ul{
+        display: none;
+      }
+      .burger{
+        display: block;
+      }
+    }
+  }
+
+  main{
+    section{
+      &.benefits{
+        .row{
+          flex-wrap: wrap;
+          padding: 2em 0;
+          .col-6{
+            width: 100%;
+            text-align: center;
+            &:first-child{
+              margin-right: 0;
+            }
+            &:last-child{
+              margin-left: 0;
+            }
+            &.image{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer{
+    .row{
+      .col{
+        form{
+          flex-wrap: wrap;
+          input{
+            max-width: 100%;
+            margin: 0 0 1em 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px){
+  footer{
+    .row{
+      flex-wrap: wrap;
+      .col{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 2em;
+        text-align: center;
+        &:first-child{
+          order: 1;
+          margin-bottom: 0;
+          .social{
+            margin: 0 auto 1.875em auto;
+            justify-content: center;
+          }
+        }
+        &:last-child{
+          width: 100%;
+          order: -1;
+          form{
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px){
+  main{
+    section{
+      &.banner{
+        h1{
+          font-size: 3em;
+        }
+      }
+
+      &.create{
+        .row{
+          .col{
+            .add-products{
+              flex-wrap: wrap;
+              input{
+                max-width: 100%;
+                margin: 0 0 1em 0;
+              }
+              a{
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

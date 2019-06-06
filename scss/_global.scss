@@ -1,0 +1,51 @@
+section{
+  padding: 4em $sides-padding;
+  border-bottom: 1px solid $light-grey;
+  .row{
+    max-width: $grid-width;
+    margin: 0 auto;
+  }
+}
+
+input, textarea, button{
+  font-family: 'Open Sans', sans-serif;
+  outline: none;
+  &[type=number]{
+    -moz-appearance: textfield;
+  }
+  &[type=number]::-webkit-inner-spin-button,
+  &[type=number]::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+}
+
+p{
+  line-height: 1.4;
+  color: $grey-text;
+  a{
+    color: $pink;
+    font-weight: 700;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+h2{
+  color: $pink;
+  margin: 0 0 0.8em 0;
+  font-size: 2em;
+}
+
+.col-6{
+  width: 50%;
+}
+.col-12{
+  width: 100%;
+}

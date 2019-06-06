@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-EN" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png" />
+    <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="images/favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="dest/css/aos.css">
+    <link rel="stylesheet" href="dest/css/styles.css">
+    <title>Smoothie Delight</title>
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="header">
+        <a class="logo" href="" title="Logo made with DesignEvo">
+          <img src="images/logo/logo.jpg" alt="Smoothie Delight">
+        </a>
+        <ul>
+          <li><a class="about-nav">About</a></li>
+          <li><a class="benefits-nav">Benefits</a></li>
+          <li><a class="design-nav">Design your smoothie</a></li>
+          <li><a class="contact-nav">Contact us</a></li>
+          <li><a href="">Sign in</a></li>
+        </ul>
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+      <nav class="mobile_nav">
+        <ul>
+          <li><a class="about-nav">About</a></li>
+          <li><a class="benefits-nav">Benefits</a></li>
+          <li><a class="design-nav">Design your smoothie</a></li>
+          <li><a class="contact-nav">Contact us</a></li>
+          <li><a href="">Sign up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="banner">
+        <h1>Discover a new world of smoothies</h1>
+      </section>
+
+      <section class="about">
+        <div class="row" data-aos="fade-right">
+          <div class="col col-12">
+            <h2>What is Smoothie Delight?</h2>
+            <p>Smoothie Delight is a brand new line of smoothies, which allows you to design your own unique smoothie and then add it to your daily cathering.</p>
+            <p>There are 4 following steps:</p>
+            <ul>
+              <li>Log in to your account</li>
+              <li>Enter ingredients for your smoothie</li>
+              <li>When you are all set, click the "add to recipes" button</li>
+              <li>All done! Your freshly made smoothie has been saved to your recipe list</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="quality">
+        <div class="row" data-aos="fade-up">
+          <div class="col col-12">
+            <h2>We care about the highest quality of our smoothies</h2>
+            <p>Our products are made with specially selected fresh fruits and vegetables, providing you the best possible experience.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits">
+        <div class="row" data-aos="fade-right">
+          <div class="col col-6">
+            <h2>Healthy & Delicious</h2>
+            <p>Consuming the daily recommendations of fruits and vegetables can be a challenge.</p>
+            <p>That is why smoothies are the best and delicious way to keep your health on the highest level by delivering your body all the necessary nutrients</p>
+          </div>
+          <div class="col col-6 image" style="background-image: url('images/belly.jpg')"></div>
+        </div>
+
+        <div class="row" data-aos="fade-left">
+          <div class="col col-6 image" style="background-image: url('images/fruits.jpg')"></div>
+          <div class="col col-6">
+            <h2>Every smoothie is an experience.<br>Make it count!</h2>
+            <p>The great thing about smoothies is that the recipe combinations are virtually endless, so what taste you will discover depends just on you!</p>
+            <p>Do not be afraid to experiment, you never know when you will discover a new taste that can become your favorite one :)</p>
+          </div>
+        </div>
+
+        <div class="row" data-aos="fade-right">
+          <div class="col col-6">
+            <h2>Perfect for weight loss<br />and muscle growth</h2>
+            <p>Smoothies can definitely help you reducing body fat or gaining more muscles, although it requires picking the right ingredients depending on your goals.</p>
+            <p>On our <a href="">blog page</a> you can read about what you should put into your smoothie for intended results.</p>
+          </div>
+          <div class="col col-6 image" style="background-image: url('images/weight.jpg')"></div>
+        </div>
+      </section>
+
+      <section class="create">
+        <div class="row" data-aos="fade-up">
+          <div class="col col-12">
+            <h2>Create your first unique smoothie!</h2>
+            <p>Enter your desired ingredients with specified amount and add them to your recipe list.</p>
+            <div class="add-products">
+              <input class="ingredient" type="text" placeholder="Ingredient">
+              <input class="amount" type="number" placeholder="Amount (g)">
+              <a>add</a>
+            </div>
+            <p class="error-message">Both fields must be filled</p>
+            <ul class="ingredient-list"></ul>
+            <a class="add-recipe">Add to recipes</a>
+            <p class="success">Your recipe has been successfully created!</p>
+            <p>You do not want to create smoothie on your own? Check out the <a href="">list of our ready products</a>.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-us">
+        <div class="row" data-aos="fade-up">
+          <h2>Contact us</h2>
+          <p>Do you want to learn more about Smoothie Delight?</p>
+          <a>Let us know</a>
+          <form>
+            <div class="wrapper">
+              <div class="col-6">
+                <input placeholder="Email adress" required name="email" type="email" />
+              </div>
+              <div class="col-6">
+                <input placeholder="Topic" required name="title" type="text" />
+              </div>
+              <div class="col-12">
+                <textarea placeholder="Message" name="message" type="text"></textarea>
+              </div>
+              <div class="col-12 submit">
+                <button type="submit" name="submit-btn">Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="row">
+        <div class="col">
+          <a class="footer_logo" href="" title="Logo made with DesignEvo">
+            <img src="images/logo/logo-footer.jpg" alt="Smoothie Delight" />
+          </a>
+          <h3>Find us on:</h3>
+          <div class="social">
+            <a href="https://www.facebook.com/" target="_blank">
+              <img src="images/footer/fb.png" alt="fb" />
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+              <img src="images/footer/tw.png" alt="tw" />
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <img src="images/footer/in.png" alt="in" />
+            </a>
+          </div>
+          <p>Copyright Smoothie Delight 2019©.<br />All rights reserved.</p>
+        </div>
+        <nav class="col">
+          <h3>Menu</h3>
+          <ul>
+            <li><a class="about-nav">About</a></li>
+            <li><a class="benefits-nav">Benefits</a></li>
+            <li><a class="design-nav">Design your smoothie</a></li>
+            <li><a class="contact-nav">Contact us</a></li>
+            <li><a href="">Sign up</a></li>
+          </ul>
+        </nav>
+        <div class="col">
+          <h3>Sign up for our mailing list to get recent updates!</h3>
+          <form>
+            <input placeholder="Email adress" name="newsletter" type="email" />
+            <button type="submit" name="submit-btn">Sign up</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="dest/js/all.js"></script>
+  </body>
+</html>
